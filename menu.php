@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,6 +8,50 @@
 <script src="./js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+<?php
+ini_set('display_errors', 0);
+
+try
+{
+$con = mysqli_connect('127.0.0.1', 'root', '');
+if (!$con) {
+  exit('データベースに接続できませんでした。');
+}
+
+$result = mysqli_select_db($con, 'yurutto');
+if (!$result) {
+  exit('データベースを選択できませんでした。');
+}
+
+$result = mysqli_query($con, 'SET NAMES utf8');
+if (!$result) {
+  exit('文字コードを指定できませんでした。');
+}
+
+$sum=$_POST['sum'];
+
+$dsn = 'mysql:dbname=yurutto;host=localhost;charset=utf8';
+$user='root';
+$password='';
+$dbh = new PDO($dsn, $user, $password);
+$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+$sql = 'SELECT count(*) as sum FROM actions';
+
+$stmt = $dbh->query($sql); 
+foreach($stmt as $val) {
+}
+$dbh = null;
+$result = mysqli_query($con, 'SELECT * FROM actions');
+$sum = $val['sum'];
+}
+catch(Exception $e)
+{
+  print 'ただいま障害により大変ご迷惑をお掛けしています。';
+  exit();
+}
+?>
+
 <header>
 
 <button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav" aria-expanded="false">
@@ -22,7 +67,12 @@
     <li><a href="index.php">Action</a></li>
     <li><a href="action_list.php">List</a></li>
     <li><a href="gohobi_list.php">Reward</a></li>
-    <li><a href="jump_to_add.php">Reward Add</a></li>
+    <?php
+    print '<form method="post" action="action_branch.php" class="form-action-list2">';
+    print '<input type="hidden" name="sum" value="'.$sum.'">';
+    print '<input type="submit" name="add[add]" class="reward-add" value="Reward Add">';
+    print '</form>';
+    ?>
     <li><a href="your_point.php">Point</a></li>
   </ul>
 </nav>

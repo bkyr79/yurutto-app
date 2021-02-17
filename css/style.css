@@ -433,3 +433,15 @@ body {
   top: 140px;
   left: 75px;
 }
+.reward-add{
+  font-size: 26px;
+  text-decoration: underline;
+  background: rgba(254, 168, 39, 0.9);
+  border: 1px solid rgba(254, 168, 39, 0.9);
+  position: relative;
+  color: white;
+  top: 0px;
+  right: 23px;
+  outline:none;
+  
+}
