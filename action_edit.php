@@ -41,15 +41,25 @@ catch (Exception $e)
 }
 
 ?>
-行動リスト修正<br/></br>
+<div class="list-edit">
+<h3>行動リスト修正</h3>
+</div>
 <form method="post" action="action_edit_check.php">
+<div class="contentE">
+<div class="input-the-list">  
 <input type="hidden" name="id" value="<?php print $list_id; ?>">
-<input type="text" name="list" value="<?php print $list; ?>"></br>
-<input type="text" name="point" style="width:200px" value="<?php print $point; ?>"></br>
+</div>
+<div class="input-the-list">
+<input type="text" name="list" value="<?php print $list; ?>">
+</div>
+<div class="input-the-list">
+<input type="text" name="point" style="width:200px" value="<?php print $point; ?>">
+<div class="input-the-list">
 <input type="text" name="praise" value="<?php print $praise; ?>">
-<br/>
-<input type="button" onclick="history.back()" value="戻る">
-<input type="submit" value="OK">
+</div>
+</div>
+<input type="button" onclick="history.back()" class="confirm-button" value="戻る">
+<input type="submit" class="confirm-submit" value="OK">
 </form>
 
 </body>

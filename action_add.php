@@ -14,12 +14,6 @@
 
 <div class="action-list"><p>Action List</p></div>
 <br/>
-<?php
-// if(){
-//   print 'それ以上は追加できません';
-// }
-
-?>
 
 <form method="post" action="action_add_check.php">
 <div class="contentA">

@@ -442,6 +442,24 @@ body {
   color: white;
   top: 0px;
   right: 23px;
-  outline:none;
-  
+  outline:none; 
+}
+.contentE{
+  position: relative;
+  top: 200px;
+  left: 75px;
+}
+.list-edit{
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
+.action-edit-list{
+  font-size: 19px;
+  padding-bottom: 6px;
+}
+.contentEC{
+  position: relative;
+  top: 170px;
+  left: 80px;
 }
