@@ -41,16 +41,18 @@ catch (Exception $e)
 }
 
 ?>
-行動リスト情報参照<br/>
-<br/>
-<?php print $list;?>
-<br/>
-<?php print $point; ?>
-<br/>
-<?php print $praise; ?>
-<br/>
+<section class="list-disp">
+<h3>行動リスト情報参照</h3>
+<ul>
+<ol><?php print $list; ?></ol>
+<ol><?php print $point; ?></ol>
+<ol><?php print $praise; ?></ol>
+</ul>
+</section>
 <form>
+<div class="back-from-actiondisp">
 <input type="button" onclick="history.back()" value="戻る">
+</div>
 </form>
 
 </body>

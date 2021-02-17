@@ -386,3 +386,32 @@ body {
 .sum_pointR span{
   font-weight: bold;
 }
+.list-disp{
+  position: absolute;
+  top: 70px;
+  left: 100px;
+}
+.list-disp ul{
+  padding-top: 20px;
+}
+.list-disp ol{
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+.back-from-actiondisp{
+  position: absolute;
+  top: 400px;
+  right: 60px;
+}
+.back-from-actiondisp input{
+  color: black;
+  font-size: 25px;
+  float: right;
+  margin-top: 10px; 
+  width: 114px;
+  height: 54px;
+  background: #FEA827;
+  border: 1px solid #FDF8C7;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
