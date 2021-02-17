@@ -44,8 +44,9 @@
   foreach($stmt as $val) {
   }
   $dbh = null;
-  print '<section class="section-action-list">';
   print '<div class="action-list"><p>Action List</p></div>';
+  print '<section class="section-action-list2">';
+  print '<div class="action-list2"><p>Action List</p></div>';
   
   print '<form method="post" action="action_branch.php" class="form-action-list">';
 
