@@ -415,3 +415,21 @@ body {
   box-sizing: border-box;
   border-radius: 20px;
 }
+.back-from-actiondisp p{
+  color: black;
+  font-size: 25px;
+  float: right;
+  margin-top: 10px; 
+  width: 114px;
+  height: 54px;
+  background: #FEA827;
+  border: 1px solid #FDF8C7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: block;
+}
+.cannot-added-mes{
+  position: absolute;
+  top: 140px;
+  left: 75px;
+}

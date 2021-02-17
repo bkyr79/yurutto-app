@@ -27,8 +27,8 @@ if(isset($_POST['add'])==true)
   $add = $_POST['sum'];
   // print $add;
   if($add>=3){
-    print '<p>これ以上追加できません</p>';
-    print '<a href="action_list.php">戻る</a>';
+    print '<div class="cannot-added-mes"><h3>これ以上追加できません。</h3></div>';
+    print '<a href="action_list.php" class="back-from-actiondisp"><p>　 戻る</p></a>';
   }else{
     header('Location: action_add.php');
     exit();
