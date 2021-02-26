@@ -54,6 +54,7 @@ catch (Exception $e)
 </div>
 <div class="input-the-list">
 <input type="text" name="point" style="width:200px" value="<?php print $point; ?>">
+</div>
 <div class="input-the-list">
 <input type="text" name="praise" value="<?php print $praise; ?>">
 </div>
