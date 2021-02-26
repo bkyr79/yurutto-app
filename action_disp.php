@@ -42,7 +42,7 @@ catch (Exception $e)
 
 ?>
 <section class="list-disp">
-<h3>行動リスト情報参照</h3>
+<h3>Detail ~Action~</h3>
 <ul>
 <ol><?php print $list; ?></ol>
 <ol><?php print $point; ?></ol>
@@ -51,7 +51,7 @@ catch (Exception $e)
 </section>
 <form>
 <div class="back-from-actiondisp">
-<input type="button" onclick="history.back()" value="戻る">
+<input type="button" onclick="history.back()" value="BACK">
 </div>
 </form>
 

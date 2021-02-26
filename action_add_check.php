@@ -1,17 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>継続アプリ「ゆるっと」</title>
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 <?php
+require "menu.php";
 
 $li_list = $_POST['list'];
 $li_point = $_POST['point'];
 $li_praise = $_POST['praise'];
 
 if ($li_list == '' || $li_point == '') {
-  print '入力されていません。<br/>';
-  print '<a href="action_add.php">戻る</a>';
+  print '<div class="cannot-added-mes-aa"><h3>Please input.</h3></div>';
+  print '<a href="action_add.php" class="back-from-actiondisp"><p>BACK</p></a>';
   exit();
 }
 if($li_point > 5){
-  print 'ポイント内容が正しくありません';
-  print '<a href="action_add.php">戻る</a>';
+  print 'point input is not correct.';
+  print '<a href="action_add.php">BACK</a>';
   exit();
 }
 
@@ -41,3 +51,5 @@ try {
 }
 
 ?>
+</body>
+</html>
