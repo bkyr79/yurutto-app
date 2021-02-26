@@ -8,9 +8,9 @@
 <?php
 require "menu.php";
 
-$dsn = 'mysql:dbname=yurutto;host=localhost;charset=utf8';
-$user='root';
-$password='';
+$dsn = 'mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+$user='b91426ab53392b';
+$password='92927f19';
 $dbh = new PDO($dsn, $user, $password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
@@ -24,11 +24,11 @@ $sum_point=$rec['sum_point'];
 
 $dbh = null;
 
-$con = mysqli_connect('127.0.0.1', 'root', '');
+$con = mysqli_connect('127.0.0.1', 'b91426ab53392b', '');
 if (!$con) {
   exit('データベースに接続できませんでした。');
 }
-$result = mysqli_select_db($con, 'yurutto');
+$result = mysqli_select_db($con, 'heroku_ebf52ea237485c7');
 if (!$result) {
   exit('データベースを選択できませんでした。');
 }

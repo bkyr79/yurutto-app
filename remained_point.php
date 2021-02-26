@@ -11,12 +11,12 @@ require "menu.php";
 
 ini_set('display_errors', 0);
 
-$con = mysqli_connect('127.0.0.1', 'root', '');
+$con = mysqli_connect('127.0.0.1', 'b91426ab53392b', '');
 if (!$con) {
   exit('データベースに接続できませんでした。');
 }
 
-$result = mysqli_select_db($con, 'yurutto');
+$result = mysqli_select_db($con, 'heroku_ebf52ea237485c7');
 if (!$result) {
   exit('データベースを選択できませんでした。');
 }
@@ -33,7 +33,7 @@ if (!$con) {
 
 $n_point=$_POST['nPoint'];
 
-$pdo = new PDO('mysql:dbname=yurutto;host=localhost;' , 'root', '');
+$pdo = new PDO('mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;' , 'b91426ab53392b', '');
 $stmt = $pdo->prepare('INSERT INTO users(point) VALUES (' .$n_point.'*-1);');
 $stmt->execute();
 

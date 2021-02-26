@@ -9,7 +9,7 @@
 <?php
 require "menu.php";
 
-$pdo = new PDO('mysql:dbname=yurutto;host=localhost;' , 'root', '');
+$pdo = new PDO('mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;' , 'b91426ab53392b', '');
 $stmt = $pdo->prepare('SELECT SUM(point) as sum_point FROM users;');
 $stmt->execute();
 $rec = $stmt->fetch(PDO::FETCH_ASSOC);

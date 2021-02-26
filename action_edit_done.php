@@ -16,9 +16,9 @@ $list = $_POST['list'];
 $point = $_POST['point'];
 $praise = $_POST['praise'];  
 
-$dsn = 'mysql:dbname=yurutto;host=localhost;charset=utf8';
-$user='root';
-$password ='';
+$dsn = 'mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+$user='b91426ab53392b';
+$password ='92927f19';
 $dbh = new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
