@@ -463,3 +463,16 @@ body {
   top: 170px;
   left: 80px;
 }
+
+.explain{
+  padding-top: 40px;
+}
+.explain h2{
+  display: block;
+  padding-left: 50px;
+}
+.explain ol{
+  display: block;
+  text-align: left;
+  padding-left: 0px;
+}
