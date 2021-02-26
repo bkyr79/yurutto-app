@@ -431,7 +431,7 @@ body {
 .cannot-added-mes{
   position: absolute;
   top: 140px;
-  left: 75px;
+  left: 54px;
 }
 .reward-add{
   font-size: 26px;
@@ -475,4 +475,10 @@ body {
   display: block;
   text-align: left;
   padding-left: 0px;
+}
+
+.point-out{
+  position: absolute;
+  top: 140px;
+  left: 115px;
 }

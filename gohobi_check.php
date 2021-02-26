@@ -12,8 +12,8 @@ $gohobi_name = $_POST['gohobi'];
 $gohobi_point = $_POST['point'];
 
 if ($gohobi_name == '' || $gohobi_point == '') {
-  print 'リストが入力されていません。<br/>';
-  print '<a href="action_add.php">戻る</a>';
+  print '<div class="point-out"><h3>Please input.</h3></div>';
+  print '<a href="gohobi_input.php" class="back-from-actiondisp"><p>　BACK</p></a>';
   exit();
 }
 
