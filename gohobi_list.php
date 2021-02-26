@@ -10,7 +10,7 @@
 
   print '<div class="reward-list"><p>Reward List</p></div>';
 
-  $con = mysqli_connect('127.0.0.1', 'b91426ab53392b', '');
+  $con = mysqli_connect('127.0.0.1', 'b91426ab53392b', '92927f19');
   if (!$con) {
     exit('データベースに接続できませんでした。');
   }
