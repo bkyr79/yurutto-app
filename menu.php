@@ -67,12 +67,7 @@ catch(Exception $e)
     <li><a href="index2.php">Action</a></li>
     <li><a href="action_list.php">List</a></li>
     <li><a href="gohobi_list.php">Reward</a></li>
-    <?php
-    print '<form method="post" action="action_branch.php" class="form-action-list2">';
-    print '<input type="hidden" name="sum" value="'.$sum.'">';
-    print '<input type="submit" name="add[add]" class="reward-add" value="Reward Add">';
-    print '</form>';
-    ?>
+    <li><a href="gohobi_input.php">Reward Add</a></li>
     <li><a href="your_point.php">Point</a></li>
   </ul>
 </nav>

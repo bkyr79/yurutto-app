@@ -10,16 +10,17 @@
   require "menu.php";
 ?>
 
-ご褒美リスト追加<br/>
+<div class="action-list"><p>Reward Add</p></div>
 <br/>
 <form method="post" action="gohobi_check.php">
-追加したいご褒美を入力してね。<br/>
+<div class="contentA">
+<div class="input-the-list"><span>Input the reward.</span></div>
 <input type="text" name="gohobi" style="width:200px"><br/>
-必要ポイントを入力してね。<br/>
+<div class="input-the-list"><span>Point?</span></div>
 <input type="text" name="point" style="width:200px"><br/>
-<br/>
-<input type="button" onclick="history.back()" value="戻る">
-<input type="submit" value="OK">
+</div>
+<input type="button" class="confirm-button" onclick="history.back()" value="Back">
+<input type="submit" class="confirm-submit" value="OK">
 </form>
 </body>
 </html>

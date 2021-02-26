@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+require "menu.php";
 
 $gohobi_name = $_POST['gohobi'];
 $gohobi_point = $_POST['point'];
