@@ -64,7 +64,7 @@ catch(Exception $e)
 
 <nav>
   <ul class="ul">
-    <li><a href="index.php">Action</a></li>
+    <li><a href="index2.php">Action</a></li>
     <li><a href="action_list.php">List</a></li>
     <li><a href="gohobi_list.php">Reward</a></li>
     <?php
