@@ -13,10 +13,10 @@ ini_set('display_errors', 0);
 
 try
 {
-// $con = mysqli_connect('127.0.0.1', 'b91426ab53392b', '92927f19');
-// if (!$con) {
-//   exit('データベースに接続できませんでした。');
-// }
+$con = mysqli_connect('us-cdbr-east-03.cleardb.com', 'b91426ab53392b', '92927f19');
+if (!$con) {
+  exit('データベースに接続できませんでした。');
+}
 
 $result = mysqli_select_db($con, 'heroku_ebf52ea237485c7');
 if (!$result) {
