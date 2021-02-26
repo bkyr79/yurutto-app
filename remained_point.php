@@ -33,7 +33,7 @@ if (!$con) {
 
 $n_point=$_POST['nPoint'];
 
-$pdo = new PDO('mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;' , 'b91426ab53392b', '');
+$pdo = new PDO('mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;' , 'b91426ab53392b', '92927f19');
 $stmt = $pdo->prepare('INSERT INTO users(point) VALUES (' .$n_point.'*-1);');
 $stmt->execute();
 
