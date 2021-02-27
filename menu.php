@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title>継続アプリ「ゆるっと」</title>
+<title>メニュー</title>
 <link type="text/css" rel="stylesheet" href="./css/menu.css">
 <script src="./js/jquery-3.5.1.min.js"></script>
 </head>

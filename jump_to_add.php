@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リスト削除</title>
+  <title></title>
   <link type="text/css" rel="stylesheet" href="./css/style.css"></head>
 <body>
 <?php
@@ -27,8 +27,6 @@
   if (!$result) {
     exit('文字コードを指定できませんでした。');
   }
-  // この記述って？
-  // この記述があるってことは、別に、formでname="sum"つけて送る記述があるってことだよね？
   $sum=$_POST['sum'];
 
   $dsn = 'mysql:dbname=heroku_ebf52ea237485c7;host=us-cdbr-east-03.cleardb.com;charset=utf8';
@@ -37,26 +35,11 @@
   $dbh = new PDO($dsn, $user, $password);
   $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
   
-  // 問題はsqlでselectした値を、どうすれば変数に置き換えられるか？
   $sql = 'SELECT count(*) as sum FROM actions';
 
   $stmt = $dbh->query($sql); 
   foreach($stmt as $val) {
-  // var_dump ($val['sum']);
   }
-
-  // var_dump($sql['sum']);
-
-
-  // $stmt = $dbh->prepare($sql);
-  // 何で配列$dataに$sumを放り込むんやっけ？
-  // そもそも$_POST['sum']ってどこからもってきた、何の値？
-  // $data[]=$sum;
-  // $stmt->execute($data);
-  
-  // $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-  // $list=$rec['list'];
-  //   print $list;
 
   $dbh = null;
 

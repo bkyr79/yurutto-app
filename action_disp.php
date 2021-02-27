@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title>ろくまる農園</title>
+<title>行動リスト詳細</title>
 <link type="text/css" rel="stylesheet" href="./css/style.css"></head>
 <body>
 <?php
@@ -41,8 +41,11 @@ catch (Exception $e)
 }
 
 ?>
-<section class="list-disp">
-<h3>Detail ~Action~</h3>
+
+<div class="action-list3"><p>Detail ~Action~</p></div>
+<br/>
+
+<section class="list-deta-act">
 <ul>
 <ol><?php print $list; ?></ol>
 <ol><?php print $point; ?></ol>

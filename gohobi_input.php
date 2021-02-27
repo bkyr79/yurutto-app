@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title>継続アプリ「ゆるっと」</title>
+<title>ご褒美入力</title>
 <link type="text/css" rel="stylesheet" href="./css/style.css"></head>
 <body>
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<title></title>
+<title>行動リスト入力</title>
 <link type="text/css" rel="stylesheet" href="./css/style.css"></head>
 <body>
 
@@ -17,14 +17,14 @@ $praise = $_POST['praise'];
 
 if($point=='' || $list=='' || $praise=='')
 {
-  print '入力されていません。<br/>';
-  print '<a href="action_edit.php">戻る</a>';
+  print '<div class="point-out"><h3>Please input.</h3></div>';
+  print '<a href="action_edit.php" class="back-from-actiondisp"><p>　BACK</p></a>';
   exit();
 }
 else if($point > 5)
 {
-  print 'ポイント内容が正しくありません';
-  print '<a href="action_edit.php">戻る</a>';
+  print 'You cannot add any more.';
+  print '<a href="action_edit.php">　BACK</a>';
   exit();
 }
 else

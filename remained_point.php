@@ -2,7 +2,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="css/style.css">
-<title></title>
+<title>残ポイント</title>
 </head>
 <body>
 
@@ -52,8 +52,6 @@ if(isset($_POST['nPoint'])){
   print '</span></div>';
   print '</div>';
 }
-// print '<div class="your-point"><p>your Point</p></div>';
-// print '<div class="your-point-font"><span>'.$sum_point.' P</span></div>';
 
 ?>
 </br>
